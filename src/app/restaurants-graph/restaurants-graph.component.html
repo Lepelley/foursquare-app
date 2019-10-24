@@ -1,0 +1,5 @@
+<h1 *ngIf="restaurants.length === 0">
+  Aucun restaurant dans la base de donnée pour l'instant<br>
+  <a [routerLink]="['/data']">Ajouter des restaurants</a>
+</h1>
+<div id="chartContainer" style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;"></div>

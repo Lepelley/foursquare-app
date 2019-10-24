@@ -1,0 +1,23 @@
+.fill-space {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.active-link {
+  text-decoration: underline !important;
+}
+
+nav a:hover {
+  text-shadow: 0 0 2px white;
+}
+
+nav a.active-link:hover {
+  text-shadow: none;
+}

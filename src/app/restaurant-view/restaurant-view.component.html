@@ -1,0 +1,9 @@
+<mat-accordion multi="true" *ngIf="restaurants.length > 0">
+  <mat-expansion-panel *ngFor="let restaurant of restaurants">
+    <mat-expansion-panel-header>{{ restaurant.name }} ({{ restaurant.type }})</mat-expansion-panel-header>
+    <p>Adresse : {{ restaurant.address }} {{ restaurant.postalCode }}
+      {{ restaurant.city }} {{ restaurant.state}} {{ restaurant.country }}
+    </p>
+  </mat-expansion-panel>
+</mat-accordion>
+<p class="info-text mat-body-1" *ngIf="restaurants.length <= 0">Pas de restaurant ajouté dans la base de donnée</p>

@@ -1,0 +1,9 @@
+mat-card {
+  margin-top: 1rem;
+}
+
+.add-forms {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}

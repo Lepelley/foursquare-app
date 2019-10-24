@@ -1,0 +1,29 @@
+<mat-card>
+  <h2>Ajouter un restaurant à partir de son identifiant ou plusieurs restaurants à proximité d'une ville dans la base de donnée</h2>
+  <div class="add-forms">
+    <form (submit)="onSearchRestaurantById(restaurantIdForm)" #restaurantIdForm="ngForm">
+      <mat-form-field>
+        <input #id="ngModel" matInput type="text" name="id" placeholder="Identifiant (ex: 4457)" ngModel required>
+        <mat-error *ngIf="id.invalid">Veuillez saisir un identifiant</mat-error>
+      </mat-form-field>
+      <button type="submit"
+              color="primary"
+              mat-flat-button>Ajouter un restaurant</button>
+    </form>
+    <form (submit)="onSearchRestaurantsNearCity(restaurantCityForm)" #restaurantCityForm="ngForm">
+      <mat-form-field>
+        <input #city="ngModel"
+                matInput
+                type="text"
+                name="city"
+                placeholder="Ville (ex: Paris, Lyon)"
+                ngModel
+                required>
+        <mat-error *ngIf="city.invalid">Veuillez saisir une ville</mat-error>
+      </mat-form-field>
+      <button type="submit"
+              color="primary"
+              mat-flat-button>Ajouter les restaurants</button>
+    </form>
+  </div>
+</mat-card>
