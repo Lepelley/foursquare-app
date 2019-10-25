@@ -21,7 +21,6 @@ export class RestaurantsGraphComponent implements OnInit {
       },
       (error) => { console.log(error); },
       () => { // we can continue when we got the data
-        console.log(this.restaurants.length);
         const dataPoints: any[] = [];
         this.restaurants.forEach(restaurant => {
           for (const point of dataPoints) {

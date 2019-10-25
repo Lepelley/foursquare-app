@@ -2,9 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.10.
 
+## How to install
+
+Clone the repository or download the .zip.
+Run `npm install` to get the node_modules folder.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `node app` to run the Node.js server on a different terminal, api is accessible at `http://localhost:8080/api/restaurants/get`.
 
 ## Code scaffolding
 

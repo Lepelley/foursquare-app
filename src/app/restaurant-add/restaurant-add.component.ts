@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
 
 import { RestaurantService } from '../services/restaurant.service';
 
@@ -14,7 +13,7 @@ export class RestaurantAddComponent {
   restaurantId = 0;
   nearCity = '';
 
-  constructor(public restaurantService: RestaurantService, private router: Router) {
+  constructor(public restaurantService: RestaurantService) {
   }
 
   onSearchRestaurantById(form: NgForm) {
@@ -23,7 +22,6 @@ export class RestaurantAddComponent {
     }
     const restaurantId = form.value.id;
     this.restaurantService.addRestaurant(restaurantId);
-    this.router.navigate(['graph']);
     form.resetForm();
   }
 
@@ -33,7 +31,6 @@ export class RestaurantAddComponent {
     }
     const cityNear = form.value.city;
     this.restaurantService.addSomeRestaurants(cityNear);
-    this.router.navigate(['graph']);
     form.resetForm();
   }
 

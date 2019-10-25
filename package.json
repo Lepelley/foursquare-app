@@ -1,6 +1,6 @@
 {
   "name": "foursquare-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "app.js",
   "author": "Vincent Lepelley <vincent@lepelley.fr>",
   "license": "ISC",
