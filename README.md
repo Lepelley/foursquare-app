@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Clone the repository or download the .zip.
 Run `npm install` to get the node_modules folder.
+Rename or duplicate then rename the `.env.example` file to `.env` and remplace `YourFoursquareClientID` and `YourFoursquareClientSecret` by your credentials.
 
 ## Development server
 
